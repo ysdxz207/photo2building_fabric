@@ -1,0 +1,9 @@
+{
+  "key.photo2building.main": "打开照片墙生成器",
+  "main.title": "照片墙生成器",
+  "main.filepath": "图片路径",
+  "main.rows": "建筑高度",
+  "main.replaceBlock": "替换方块(不可更改)",
+  "main.horizontal": "水平建筑(不勾选是垂直建筑)",
+  "main.generate": "生成"
+}

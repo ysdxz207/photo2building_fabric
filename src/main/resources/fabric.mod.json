@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "photo2building",
+  "version": "${version}",
+
+  "name": "photo2building",
+  "description": "照片生成建筑墙",
+  "authors": [
+    "hupubao"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/photo2building/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.hupubao.fabric.mod.Photo2Building"
+    ],
+    "client": [
+      "com.hupubao.fabric.mod.ClientEntrypoint"
+    ]
+  },
+  "mixins": [
+    "photo2building.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

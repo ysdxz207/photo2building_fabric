@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hupubao.fabric.mod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "Photo2BuildingMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
