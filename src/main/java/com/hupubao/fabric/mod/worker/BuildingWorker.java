@@ -141,7 +141,7 @@ public class BuildingWorker {
         while (building) {
 
             if (queue.isEmpty()) {
-                ThreadUtil.sleep(200);
+                ThreadUtil.sleep(20);
                 continue;
             }
 
@@ -153,8 +153,8 @@ public class BuildingWorker {
 
             int currentRow = blockBuildTask.getCurrentNums() % buildTask.getRows() == 0 ?
                     blockBuildTask.getCurrentNums() / buildTask.getRows() : blockBuildTask.getCurrentNums() / buildTask.getRows() + 1;
-            if (buildTask.getRows() > 100 && currentRow < 4) {
-                ThreadUtil.sleep(10);
+            if (buildTask.getRows() >= 50 && currentRow < 4) {
+                ThreadUtil.sleep(15);
             }
 
             convertAndPlaceBlock(blockBuildTask);
